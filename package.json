@@ -8,9 +8,8 @@
     "preview": "vite preview",
       },
   "dependencies": {
-    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
     "@supabase/supabase-js": "latest"
-  },
+  }
 } 
