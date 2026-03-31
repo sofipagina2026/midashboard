@@ -1,15 +1,19 @@
 {
   "name": "midashboard",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-      },
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
-    "@supabase/supabase-js": "latest"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 } 
