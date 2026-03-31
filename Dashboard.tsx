@@ -2,8 +2,8 @@ import React from 'react';
 import { DataTableView } from './DataTableView';
 
 interface CertificadosViewProps {
-  certsBomberos: any[];
-  certsSeguridad: any[];
+  Bombero: any[];
+  CICPC: any[];
   onAnalyze: (data: any[], title: string) => void;
 }
 
