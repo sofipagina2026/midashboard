@@ -31,13 +31,13 @@ export const CertificadosView: React.FC<CertificadosViewProps> = ({ certsBombero
     <div className="space-y-8">
       <DataTableView 
         title="Certificados de Bomberos"
-        data={certsBomberos}
+        data={Bombero}
         columns={bomberosColumns}
         onAnalyze={onAnalyze}
       />
       <DataTableView 
         title="Certificados de Seguridad"
-        data={certsSeguridad}
+        data={CICPC}
         columns={seguridadColumns}
         onAnalyze={onAnalyze}
       />
