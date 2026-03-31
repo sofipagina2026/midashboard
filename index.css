@@ -1,0 +1,56 @@
+import React from 'react';
+import { LayoutDashboard, ShieldCheck, Flame, Video, UserMinus, FileText, Settings } from 'lucide-react';
+
+interface SidebarProps {
+  activePage: string;
+  setActivePage: (page: string) => void;
+}
+
+const navItems = [
+  { id: 'overview', label: 'Dashboard', icon: LayoutDashboard },
+  { id: 'INVESTIGACIONES', label: 'Investigaciones', icon: ShieldCheck },
+  { id: 'CERTIFICADOS DE SEGURIDAD', label: 'Cert. Seguridad', icon: ShieldCheck },
+  { id: 'CERTIFICADOS DE BOMBEROS', label: 'Cert. Bomberos', icon: Flame },
+  { id: 'PRESUPUESTO', label: 'Presupuesto', icon: FileText },
+  { id: 'RETIROS VOLUNTARIOS', label: 'Retiros Voluntarios', icon: UserMinus },
+  { id: 'SERVICIO TECNICO', label: 'Servicio Técnico', icon: FileText },
+];
+
+export const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage }) => {
+  return (
+    <aside className="w-64 bg-white dark:bg-slate-800/50 border-r border-slate-200/80 dark:border-slate-800/80 p-6 flex flex-col">
+      <nav className="flex-grow">
+        <ul>
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <button
+                onClick={() => setActivePage(item.id)}
+                className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-bold transition-colors mb-2 ${
+                  activePage === item.id
+                    ? 'bg-indigo-500 text-white shadow-lg shadow-indigo-500/20'
+                    : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700'
+                }`}
+              >
+                <item.icon className="w-5 h-5" />
+                <span>{item.label}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div>
+        <button
+          onClick={() => setActivePage('settings')}
+          className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-bold transition-colors ${
+            activePage === 'settings'
+              ? 'bg-indigo-500 text-white shadow-lg shadow-indigo-500/20'
+              : 'text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700'
+          }`}
+        >
+          <Settings className="w-5 h-5" />
+          <span>Configuración</span>
+        </button>
+      </div>
+    </aside>
+  );
+};

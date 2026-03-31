@@ -1,0 +1,31 @@
+import { createClient } from '@supabase/supabase-js';
+
+/**
+ * supabaseClient.ts
+ * Configuración centralizada del cliente Supabase
+ */
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || import.meta.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.error('CRITICAL: Supabase credentials missing. Check Vercel Environment Variables.');
+}
+
+// Cliente optimizado para políticas RLS públicas y despliegue en Vercel
+export const supabase = createClient(
+  supabaseUrl || '', 
+  supabaseAnonKey || '', 
+  {
+    auth: {
+      persistSession: false, // Desactivado para evitar conflictos en entornos serverless si no se usa auth
+      autoRefreshToken: false,
+    },
+    global: {
+      headers: { 
+        'x-application-name': 'sofitasa-intel-prod'
+      },
+    },
+  }
+);
+

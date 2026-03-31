@@ -1,0 +1,16 @@
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://cjmhjzcafybgltvhdpgp.supabase.co';
+const supabaseAnonKey = 'sb_publishable_8zQJM17_ZZqe8WQeP7uecA_7Ajw3C24';
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
+async function run() {
+  const { data, error } = await supabase.from('PRESUPUESTOS').select('*').limit(1);
+  if (error) {
+    console.error('Error fetching data:', error);
+    return;
+  }
+  console.log('PRESUPUESTOS:', JSON.stringify(data, null, 2));
+}
+
+run();

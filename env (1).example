@@ -1,0 +1,54 @@
+Nro_Oficina;Oficina ;Estado ;Status
+1;Principal ;Tachira ;Abierto
+2;Tariba ;Tachira ;Abierto
+3;La Concordia ;Tachira ;Abierto
+301;TE Alcaldia de San Cristobal;Tachira ;Abierto
+302;TE Expresos Occidente;Tachira ;Abierto
+4;La Grita ;Tachira ;Abierto
+5;Plaza Los Mangos ;Tachira ;Abierto
+6;La Tendida ;Tachira ;Abierto
+8;San Antonio;Tachira ;Abierto
+10;Ureña ;Tachira ;Abierto
+11;Acarigua ;Portuguesa;Abierto
+12;Centro ;Tachira ;Abierto
+13;Las Acacias ;Tachira ;Abierto
+14;Seboruco ;Tachira ;Abierto
+15;Palmira ;Tachira ;Abierto
+17;El Cobre;Tachira ;Abierto
+18;Guasdualito;Apure;Abierto
+20;Centro de Compras Barata;Tachira ;Abierto
+21;Mérida;Merida;Abierto
+22;Colon ;Tachira ;Abierto
+23;Santa Bárbara de Barinas;Barinas;Abierto
+24;Barquisimeto;Lara ;Abierto
+25;Tóvar;Merida;Abierto
+26;Coloncito;Tachira ;Abierto
+28;Santa Bárbara del Zulia ;Zulia ;Abierto
+29;El Rosal ;Miranda;Abierto
+31;Rubio ;Tachira ;Abierto
+32;Ejido;Merida;Abierto
+35;Valera ;Trujillo ;Abierto
+36;Capacho ;Tachira ;Abierto
+37;El Piñal ;Tachira ;Abierto
+38;Maracaibo ;Zulia ;Abierto
+39;Valencia ;Carabobo;Abierto
+41;Maracay ;Aragua;Abierto
+42;Porlamar ;Nueva Esparta ;Abierto
+47;Guanare ;Portuguesa;Abierto
+48;Puerto La Cruz;Anzoategui ;Abierto
+50;Sabaneta de Barinas;Barinas;Abierto
+52;La Encrucijada;Aragua;Abierto
+531;Píritu;Portuguesa;Abierto
+53;Turen;Portuguesa;Abierto
+54;Timotes;Merida;Abierto
+58;Punto Fijo ;Falcon;Abierto
+59;San Felipe ;Yaracuy;Abierto
+61;Puerto Ordaz;Bolivar ;Abierto
+63;Maturin;Monagas ;Abierto
+64;Barinas II;Barinas;Abierto
+67;Sambil San Cristóbal ;Tachira ;Abierto
+68;Mucuchies;Merida;Abierto
+70;Ciudad Ojeda ;Zulia ;Abierto
+72;Pregonero ;Tachira ;Abierto
+75;Vigia II;Merida;Abierto
+76;TE Barrio Obrero ;Tachira ;Abierto
